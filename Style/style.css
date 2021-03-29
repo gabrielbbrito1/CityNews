@@ -55,7 +55,10 @@ ul{
 body.home #navegacao a#home,
 body.brasil #navegacao a#brasil,
 body.internacional #navegacao a#internacional,
-body.fotos #navegacao a#fotos{
+body.fotos #navegacao a#fotos,
+body.ciencia #navegacao a#ciencia,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude{
     color: #fff;
     background: #de003e;
     cursor: text;
@@ -112,6 +115,13 @@ h2{
     padding: 5px;
     margin-top: 5px;
 }
+.caixa-conteudo a{
+    color: #b10333;
+    font-weight: bold;
+}
+.caixa-conteudo a:hover{
+    color: #e50040;
+}
 /** Formatação do menu lateral **/
 #lateral ul a{
     font-size: 0.9em;
@@ -144,6 +154,54 @@ input.submit{
     background-color: #b10333;
     border: 2px solid #870529;
 }
+/** formatando imagens **/
+img{
+    border: 2px solid #dfdfdf;
+}
+img.imagem-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+/** formatando cabeçalhos **/
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+.entrevista h3{
+    background: #de003e;
+}
+/** formatando lista de noticias **/
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+#lista-noticias li a{
+    text-decoration: none;
+}
+#lista-noticias li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+#lista-noticias li a p{
+    font-size: 0.7em;
+    color: #000;
+}
+#lista-noticias li:hover{
+    background: #eee;
+    cursor: pointer;
+}
 /** Rodapé da página **/
 #container-rodape{
     clear: both;
@@ -154,4 +212,6 @@ input.submit{
     margin: 0 auto;
     width: 750px;
     color: #fff;
+    text-align: center;
+    
 }
